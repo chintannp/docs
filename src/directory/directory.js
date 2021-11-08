@@ -1496,17 +1496,17 @@ const directory = {
           {
             title: "Generate model files",
             route: "/start/getting-started/generate-model",
-            filters: ["android", "ios", "flutter"],
+            filters: ["android", "ios", "flutter", "react-native"],
           },
           {
             title: "Integrate your app",
             route: "/start/getting-started/integrate",
-            filters: ["android", "ios", "ionic", "flutter"],
+            filters: ["android", "ios", "ionic", "flutter", "react-native"],
           },
           {
             title: "Connect to the cloud",
             route: "/start/getting-started/add-api",
-            filters: ["android", "ios", "ionic", "flutter"],
+            filters: ["android", "ios", "ionic", "flutter", "react-native"],
           },
           {
             title: "Connect API and database to the app",
@@ -1514,7 +1514,6 @@ const directory = {
             filters: [
               "js",
               "react",
-              "react-native",
               "angular",
               "vue",
               "next",
@@ -1527,7 +1526,7 @@ const directory = {
           {
             title: "Add authentication",
             route: "/start/getting-started/auth",
-            filters: ["react", "react-native", "angular", "vue"],
+            filters: ["react", "angular", "vue"],
           },
           {
             title: "Deploy and host app",
@@ -1535,7 +1534,6 @@ const directory = {
             filters: [
               "js",
               "react",
-              "react-native",
               "angular",
               "vue",
               "next",
