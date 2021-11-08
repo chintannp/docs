@@ -1,10 +1,10 @@
 In this section you’ll integrate Amplify DataStore with your app, and learn to use the generated data model to create, update, query, and delete Todo items by building an app. You can find the source code of the final Todo App [on our GitHub repository](https://github.com/chintannp/amplified_todo_rn).
 
 ## Boilerplate UI
-First, we will create some files and place the boiletplate UI code in it. You might find your IDE complains about unreferenced declarations but, don’t worry, we’ll get around to fixing those as we fill out our app with more functionality.
+First, we will create some files and place the boilerplate UI code in it. You might find your IDE complains about unreferenced declarations but, don’t worry, we’ll get around to fixing those as we fill out our app with more functionality.
 
 #### App.js
-First, replace the contents of your **App.js** file with the following UI boilerplate code. Here, we are importing our Home component. Additonally, we are configuring Amplify using `Amplify.configure`. You might have already done this in previous step while setting up the project.
+First, replace the contents of your **App.js** file with the following UI boilerplate code. Here, we are importing our Home component. Additionally, we are configuring Amplify using `Amplify.configure`. You might have already done this in previous step while setting up the project.
 
 ```js
 import React from 'react';
@@ -300,7 +300,7 @@ Let’s next manipulate the data and add more functionality to our app.
 ### Creating a Todo
 The *Add todo* button opens up a Modal to add todos. But, right now, the form does nothing when the *Save* button is pressed. Let’s fix that by having it save a **Todo** to DataStore.
 
-Update the `addTodo()` function in the **AddModal** component.
+Update the `addTodo()` function in the **AddTodoModal** component.
 
 ```js
   async function addTodo() {
@@ -359,7 +359,7 @@ Inside our `useEffect()` hook, we will add a `subscription` to data updates.
     //subscribe to data updates and fetch the todos using onQuery().
     //msg variable is the updated todo item and can be used for further customizations.
     const subscription = DataStore.observe(Todo).subscribe((msg) => {
-      //onQuery will be called eachtime a data update subscription is received.
+      //onQuery will be called each time a data update subscription is received.
       //onQuery will update the todos list with the latest data/
       onQuery();
     });
