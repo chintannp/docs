@@ -320,7 +320,7 @@ Now that we have a way to add Todo items, we need a way to list them out.
 We will use the `useEffect()` hook of **TodoList** component to list the todo items. `useEffect()` can be used to initialize variables on the first render of the component. Add the below `useEffect()` in the **TodoList** component right after state initialization.
 
 ```js
-  const [todos,   useEffect(() => {
+  useEffect(() => {
     const onQuery = async () => {
       const todos_list = await DataStore.query(Todo);
       setTodos(todos_list);
