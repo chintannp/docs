@@ -329,9 +329,6 @@ We will use the `useEffect()` hook of **TodoList** component to list the todo it
     // load todos on first render
     onQuery();
 
-    return function cleanup() {
-      subscription.unsubscribe();
-    };
   }, []);
 ```
 You can find more about useEffect hook [here](https://reactjs.org/docs/hooks-effect.html).
